@@ -29,7 +29,11 @@ $session = \Config\Services::session();
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
     <!-- SimpleMDE -->
     <link rel="stylesheet" href="plugins/simplemde/simplemde.min.css">
-
+    <?php if (current_URL() === base_URL('master_semester_dosen') || current_URL() === base_URL('master_jurusan_matakuliah')) { ?>
+    <!-- select2 -->
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <?php } ?>
 </head>
 
 <body class="hold-transition">
@@ -174,13 +178,13 @@ $session = \Config\Services::session();
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="manage_soal" class="nav-link">
+                                    <a href="master_semester_dosen" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>KELAS - DOSEN</p>
+                                        <p>SEMESTER - DOSEN</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="input_pilgan" class="nav-link">
+                                    <a href="master_jurusan_matakuliah" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>JURUSAN - MATA KULIAH</p>
                                     </a>

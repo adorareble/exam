@@ -37,4 +37,12 @@ class AdminController extends Controller
     public function view_admin_datamahasiswa(){
         return view('admin\header').view('admin\datamahasiswa').view('admin\footer');
     }
+
+    public function view_admin_semester_dosen(){
+        return view('admin\header').view('admin\semesterdosen').view('admin\footer');
+    }
+
+    public function view_admin_jurusan_matakuliah(){
+        return view('admin\header').view('admin\jurusanmatakuliah').view('admin\footer');
+    }
 }
