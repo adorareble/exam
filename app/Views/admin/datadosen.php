@@ -34,6 +34,7 @@
                                         <th>Email</th>
                                         <th>Username</th>
                                         <th>Jurusan</th>
+                                        <th>Mata Kuliah Ajar</th>
                                         <th style="width: 200px">Action</th>
                                     </tr>
                                 </thead>
@@ -45,6 +46,11 @@
                                         <td>indra@gmail.com</td>
                                         <td>indragif</td>
                                         <td>Teknik Informatika</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-success">Embeded Sytsem</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah 2</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah 3</span>
+                                        </td>
                                         <td><button data-toggle="modal" data-target="#edit_data"
                                                 class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
                                                 Edit</button>
@@ -63,12 +69,20 @@
                                         <td>indra@gmail.com</td>
                                         <td>indragif</td>
                                         <td>Teknik Informatika</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-success">Embeded Sytsem</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah 2</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah 3</span>
+                                        </td>
                                         <td><button data-toggle="modal" data-target="#edit_data"
                                                 class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
                                                 Edit</button>
                                             <button class="btn btn-xs bg-red hapus" type="button"><i
                                                     class="fa fa-trash"></i>
                                                 Delete</button>
+                                            <button class="btn btn-xs bg-green aktifakun" type="button"><i
+                                                    class="fa fa-plus"></i>
+                                                Aktifkan Akun</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -78,14 +92,46 @@
                                         <td>indra@gmail.com</td>
                                         <td>indragif</td>
                                         <td>Teknik Informatika</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-success">Embeded Sytsem</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah 2</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah 3</span>
+                                        </td>
                                         <td><button data-toggle="modal" data-target="#edit_data"
                                                 class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
                                                 Edit</button>
                                             <button class="btn btn-xs bg-red hapus" type="button"><i
                                                     class="fa fa-trash"></i>
                                                 Delete</button>
+                                            <button class="btn btn-xs bg-green aktifakun" type="button"><i
+                                                    class="fa fa-plus"></i>
+                                                Aktifkan Akun</button>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>2918983</td>
+                                        <td>Indra</td>
+                                        <td>indra@gmail.com</td>
+                                        <td>indragif</td>
+                                        <td>Teknik Informatika</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-success">Embeded Sytsem</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah 2</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah 3</span>
+                                        </td>
+                                        <td><button data-toggle="modal" data-target="#edit_data"
+                                                class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
+                                                Edit</button>
+                                            <button class="btn btn-xs bg-red hapus" type="button"><i
+                                                    class="fa fa-trash"></i>
+                                                Delete</button>
+                                            <button class="btn btn-xs bg-green aktifakun" type="button"><i
+                                                    class="fa fa-plus"></i>
+                                                Aktifkan Akun</button>
+                                        </td>
+                                    </tr>
+                                    
                             </table>
                         </div>
                         <!-- /.card-body -->
@@ -140,11 +186,22 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Jurusan</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2" style="width: 100%;">
+                            <select class="form-control select2bs4" style="width: 100%;">
                                 <option selected="selected" disabled>Jurusan</option>
                                 <option value="Teknik Informatika">Teknik Informatika</option>
                                 <option value="Sistem Komputer">Sistem Komputer</option>
                                 <option value="Sistem Informasi">Sistem Informasi</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dosen" class="col-sm-3 col-form-label">MK Ajar</label>
+                            <div class="col-sm-9">
+                            <select class="form-control select2bs4" multiple="multiple" name="semester" style="width: 100%;">
+                                <!-- <option selected="selected" disabled>SEMESTER</option> -->
+                                <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                <option value="#">Mata Kuliah - Sesuai Jurusan</option>
                             </select>
                             </div>
                         </div>
@@ -202,11 +259,22 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Jurusan</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2" style="width: 100%;">
+                            <select class="form-control select2bs4" style="width: 100%;">
                                 <option selected="selected" disabled>Jurusan</option>
                                 <option value="Teknik Informatika">Teknik Informatika</option>
                                 <option value="Sistem Komputer">Sistem Komputer</option>
                                 <option value="Sistem Informasi">Sistem Informasi</option>
+                            </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dosen" class="col-sm-3 col-form-label">MK Ajar</label>
+                            <div class="col-sm-9">
+                            <select class="form-control select2bs4" multiple="multiple" name="semester" style="width: 100%;">
+                                <!-- <option selected="selected" disabled>SEMESTER</option> -->
+                                <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                <option value="#">Mata Kuliah - Sesuai Jurusan</option>
                             </select>
                             </div>
                         </div>

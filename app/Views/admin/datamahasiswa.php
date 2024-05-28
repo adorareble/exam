@@ -34,7 +34,7 @@
                                         <th>Email</th>
                                         <th>Username</th>
                                         <th>Jurusan</th>
-                                        <th>Semester</th>
+                                        <th>Mata Kuliah Pilihan</th>
                                         <th style="width: 200px">Action</th>
                                     </tr>
                                 </thead>
@@ -46,7 +46,14 @@
                                         <td>indra@gmail.com</td>
                                         <td>indragif</td>
                                         <td>Teknik Informatika</td>
-                                        <td>III (TIGA)</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                        </td>
                                         <td><button data-toggle="modal" data-target="#edit_data"
                                                 class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
                                                 Edit</button>
@@ -65,7 +72,14 @@
                                         <td>indra@gmail.com</td>
                                         <td>indragif</td>
                                         <td>Teknik Informatika</td>
-                                        <td>III (TIGA)</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                        </td>
                                         <td><button data-toggle="modal" data-target="#edit_data"
                                                 class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
                                                 Edit</button>
@@ -81,7 +95,14 @@
                                         <td>indra@gmail.com</td>
                                         <td>indragif</td>
                                         <td>Teknik Informatika</td>
-                                        <td>III (TIGA)</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                        </td>
                                         <td><button data-toggle="modal" data-target="#edit_data"
                                                 class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
                                                 Edit</button>
@@ -90,6 +111,30 @@
                                                 Delete</button>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>2918983</td>
+                                        <td>Indra</td>
+                                        <td>indra@gmail.com</td>
+                                        <td>indragif</td>
+                                        <td>Teknik Informatika</td>
+                                        <td>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                            <span class="badge rounded-pill bg-success">Mata Kuliah Pilihan - Sesuai
+                                                Jurusan</span>
+                                        </td>
+                                        <td><button data-toggle="modal" data-target="#edit_data"
+                                                class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
+                                                Edit</button>
+                                            <button class="btn btn-xs bg-red hapus" type="button"><i
+                                                    class="fa fa-trash"></i>
+                                                Delete</button>
+                                        </td>
+                                    </tr>
+
                             </table>
                         </div>
                         <!-- /.card-body -->
@@ -144,35 +189,27 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Jurusan</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected" disabled>Jurusan</option>
-                                <option value="Teknik Informatika">Teknik Informatika</option>
-                                <option value="Sistem Komputer">Sistem Komputer</option>
-                                <option value="Sistem Informasi">Sistem Informasi</option>
-                            </select>
+                                <select class="form-control select2bs4" style="width: 100%;">
+                                    <option selected="selected" disabled>Jurusan</option>
+                                    <option value="Teknik Informatika">Teknik Informatika</option>
+                                    <option value="Sistem Komputer">Sistem Komputer</option>
+                                    <option value="Sistem Informasi">Sistem Informasi</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="semester" class="col-sm-3 col-form-label">Semester</label>
+                            <label for="dosen" class="col-sm-3 col-form-label">MK Ajar</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected" disabled>SEMESTER</option>
-                                <option value="#">I (SATU)</option>
-                                <option value="#">II (DUA)</option>
-                                <option value="#">III (TIGA)</option>
-                                <option value="#">IV (EMPAT)</option>
-                                <option value="#">V (LIMA)</option>
-                                <option value="#">VI (ENAM)</option>
-                                <option value="#">VII (TUJUH)</option>
-                                <option value="#">VIII (DELAPAN)</option>
-                                <option value="#">IX (SEMBILAN)</option>
-                                <option value="#">X (SEPULUH)</option>
-                                <option value="#">XI (SEBELAS)</option>
-                                <option value="#">XII (DUA BELAS)</option>
-                            </select>
+                                <select class="form-control select2bs4" multiple="multiple" name="semester"
+                                    style="width: 100%;">
+                                    <!-- <option selected="selected" disabled>SEMESTER</option> -->
+                                    <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                    <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                    <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                </select>
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- /.card-body -->
                 </form>
@@ -200,7 +237,7 @@
                 <!-- form start -->
                 <form class="form-horizontal">
                     <div class="card-body">
-                    <div class="form-group row">
+                        <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">NIM</label>
                             <div class="col-sm-9">
                                 <input type="text" class="form-control" name="nim" placeholder="NIM">
@@ -227,32 +264,24 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Jurusan</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected" disabled>Jurusan</option>
-                                <option value="Teknik Informatika">Teknik Informatika</option>
-                                <option value="Sistem Komputer">Sistem Komputer</option>
-                                <option value="Sistem Informasi">Sistem Informasi</option>
-                            </select>
+                                <select class="form-control select2bs4" style="width: 100%;">
+                                    <option selected="selected" disabled>Jurusan</option>
+                                    <option value="Teknik Informatika">Teknik Informatika</option>
+                                    <option value="Sistem Komputer">Sistem Komputer</option>
+                                    <option value="Sistem Informasi">Sistem Informasi</option>
+                                </select>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="semester" class="col-sm-3 col-form-label">Semester</label>
+                            <label for="dosen" class="col-sm-3 col-form-label">MK Ajar</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2" style="width: 100%;">
-                                <option selected="selected" disabled>SEMESTER</option>
-                                <option value="#">I (SATU)</option>
-                                <option value="#">II (DUA)</option>
-                                <option value="#">III (TIGA)</option>
-                                <option value="#">IV (EMPAT)</option>
-                                <option value="#">V (LIMA)</option>
-                                <option value="#">VI (ENAM)</option>
-                                <option value="#">VII (TUJUH)</option>
-                                <option value="#">VIII (DELAPAN)</option>
-                                <option value="#">IX (SEMBILAN)</option>
-                                <option value="#">X (SEPULUH)</option>
-                                <option value="#">XI (SEBELAS)</option>
-                                <option value="#">XII (DUA BELAS)</option>
-                            </select>
+                                <select class="form-control select2bs4" multiple="multiple" name="semester"
+                                    style="width: 100%;">
+                                    <!-- <option selected="selected" disabled>SEMESTER</option> -->
+                                    <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                    <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                    <option value="#">Mata Kuliah - Sesuai Jurusan</option>
+                                </select>
                             </div>
                         </div>
                     </div>

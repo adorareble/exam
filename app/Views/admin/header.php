@@ -29,7 +29,7 @@ $session = \Config\Services::session();
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
     <!-- SimpleMDE -->
     <link rel="stylesheet" href="plugins/simplemde/simplemde.min.css">
-    <?php if (current_URL() === base_URL('master_semester_dosen') || current_URL() === base_URL('master_jurusan_matakuliah')) { ?>
+    <?php if (current_URL() === base_URL('master_semester_dosen') || current_URL() === base_URL('master_jurusan_matakuliah') || current_URL() === base_URL('master_datadosen') || current_URL() === base_URL('master_datamahasiswa')) { ?>
     <!-- select2 -->
     <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
     <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
@@ -125,7 +125,7 @@ $session = \Config\Services::session();
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-header">TOOLS</li>
+                        <li class="nav-header">Main Menu</li>
 
                         <li class="nav-item">
                             <a href="#" class="nav-link">
@@ -142,12 +142,12 @@ $session = \Config\Services::session();
                                         <p>Jurusan</p>
                                     </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="master_semester" class="nav-link">
+                                <!-- <li class="nav-item">
+                                    <a href="master_semester" class="nav-link menu-is-opening menu-open">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Semester</p>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a href="master_matakuliah" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
@@ -177,20 +177,33 @@ $session = \Config\Services::session();
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
-                                <li class="nav-item">
+                                <!-- <li class="nav-item">
                                     <a href="master_semester_dosen" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>SEMESTER - DOSEN</p>
+                                        <p>Semester - Dosen</p>
                                     </a>
-                                </li>
+                                </li> -->
                                 <li class="nav-item">
                                     <a href="master_jurusan_matakuliah" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>JURUSAN - MATA KULIAH</p>
+                                        <p>Jurusan - Mata Kuliah</p>
                                     </a>
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                                    <a href="master_banksoal" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Bank Soal</p>
+                                    </a>
+                                </li>
+                        <li class="nav-header">Administrator</li>
+                        <li class="nav-item">
+                                    <a href="master_user" class="nav-link">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>User Management</p>
+                                    </a>
+                                </li>
                         <li class="nav-header"></li>
                         <li class="nav-item">
                             <a href="logout" class="nav-link">

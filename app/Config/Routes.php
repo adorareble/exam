@@ -30,6 +30,19 @@ $routes->get('master_datadosen', 'AdminController::view_admin_datadosen');
 $routes->get('master_datamahasiswa', 'AdminController::view_admin_datamahasiswa');
 $routes->get('master_semester_dosen', 'AdminController::view_admin_semester_dosen');
 $routes->get('master_jurusan_matakuliah', 'AdminController::view_admin_jurusan_matakuliah');
+$routes->get('master_banksoal', 'AdminController::view_admin_banksoal');
+$routes->get('master_user', 'AdminController::view_admin_userM');
+
+
+// Admin Sidebar
+$routes->get('dosen_dashboard', 'DosenController::index');
+$routes->get('master_jurusan', 'AdminController::view_admin_jurusan');
+$routes->get('master_semester', 'AdminController::view_admin_semester');
+$routes->get('master_matakuliah', 'AdminController::view_admin_matakuliah');
+$routes->get('master_datadosen', 'AdminController::view_admin_datadosen');
+$routes->get('master_datamahasiswa', 'AdminController::view_admin_datamahasiswa');
+$routes->get('master_semester_dosen', 'AdminController::view_admin_semester_dosen');
+$routes->get('master_jurusan_matakuliah', 'AdminController::view_admin_jurusan_matakuliah');
 
 
 

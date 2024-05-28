@@ -45,4 +45,12 @@ class AdminController extends Controller
     public function view_admin_jurusan_matakuliah(){
         return view('admin\header').view('admin\jurusanmatakuliah').view('admin\footer');
     }
+
+    public function view_admin_banksoal(){
+        return view('admin\header').view('admin\input_essay').view('admin\input_pilgan').view('admin\input_file').view('admin\footer');
+    }
+    
+    public function view_admin_userM(){
+        return view('admin\header').view('admin\usermanagement').view('admin\footer');
+    }
 }
