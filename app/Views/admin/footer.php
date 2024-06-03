@@ -23,10 +23,13 @@
 <script>
 $(function() {
     // Summernote
-    $('#pilgansoal').summernote()
-    $('#editpilgansoal').summernote()
-    $('#essaysoal').summernote()
-    $('#essayjawaban').summernote()
+    $('#add_soal_pilgan').summernote()
+    $('#add_soal_essay').summernote()
+    $('#add_jawaban_essay').summernote()
+    $('#edit_soal_pilgan').summernote()
+    $('#edit_soal_essay').summernote()
+    $('#edit_jawaban_essay').summernote()
+
 
     // CodeMirror
     CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {

@@ -43,7 +43,7 @@ class UserController extends Controller
             } elseif ($user['role'] == "dosen") {
                 return redirect()->to('dosen_dashbord');
             } elseif ($user['role'] == "mahasiswa") {
-                return redirect()->to('mahasiswa');
+                return redirect()->to('mahasiswa_dashboard');
             } else {
                 return redirect()->to('login')->with('error', 'Username atau password salah.');
             }

@@ -136,12 +136,12 @@
                         </div>
                     </div>
                     <!-- /.card-body -->
-                </form>
             </div>
             <div class="card-footer modal-footer justify-content-right">
                 <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
                 <button type="submit" class="btn btn-sm bg-green tambah">TAMBAH</button>
             </div>
+            </form>
         </div>
         <!-- /.modal-content -->
     </div>
@@ -186,12 +186,13 @@
                         </div>
                     </div>
                     <!-- /.card-body -->
-                </form>
             </div>
             <div class="card-footer modal-footer justify-content-right">
                 <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
-                <button type="button" class="btn btn-sm bg-blue edit">SIMPAN</button>
+                <button type="submit" class="btn btn-sm bg-blue edit">SIMPAN</button>
             </div>
+            </form>
+
         </div>
         <!-- /.modal-content -->
     </div>

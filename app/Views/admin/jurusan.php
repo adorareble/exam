@@ -92,12 +92,12 @@
             </div>
             <div class="modal-body">
                 <!-- form start -->
-                <form  action="filetambahsoal" method="post" class="form-horizontal">
+                <form  action="#" method="post" class="form-horizontal">
                     <div class="card-body">
                         <div class="form-group row">
                             <label for="jurusan" class="col-sm-2 col-form-label">Jurusan</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="jurusan" placeholder="Jurusan">
+                                <input type="text" class="form-control" name="jurusan" placeholder="Jurusan">
                             </div>
                         </div>
                     </div>

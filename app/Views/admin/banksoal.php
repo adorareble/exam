@@ -131,7 +131,7 @@
                                                                                 <td>B</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_pilgan"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -178,7 +178,7 @@
                                                                                 <td>B</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_pilgan"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -225,7 +225,7 @@
                                                                                 <td>B</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_pilgan"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -345,7 +345,7 @@
                                                                                 <td>1</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_essay"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -407,7 +407,7 @@
                                                                                 <td>1</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_essay"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -469,7 +469,7 @@
                                                                                 <td>1</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_essay"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -605,7 +605,7 @@
                                                                                 <td>1</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_file"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -630,7 +630,7 @@
                                                                                 <td>1</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_file"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -653,7 +653,7 @@
                                                                                 <td>1</td>
                                                                                 <td>12</td>
                                                                                 <td><button data-toggle="modal"
-                                                                                        data-target="#edit_pilgan"
+                                                                                        data-target="#ubah_file"
                                                                                         class="btn btn-xs bg-blue"
                                                                                         type="button"><i
                                                                                             class="fa fa-edit"></i>
@@ -713,12 +713,12 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="pilgantambahsoal" method="post">
+                <form action="add_pilgan" method="post">
                     <div class="card-body">
                         <div class="row">
                             <div class="form-group col">
-                                <label for="exampleInputSeri">Dosen</label>
-                                <select name="pilgandosen" class="form-control">
+                                <label>Dosen</label>
+                                <select name="dosen" class="form-control">
                                     <option value="#">NAMA DOSEN</option>
                                     <option value="#">NAMA DOSEN</option>
                                     <option value="#">NAMA DOSEN</option>
@@ -726,8 +726,8 @@
                             </div>
 
                             <div class="form-group col">
-                                <label for="exampleInputSeri">Mata Kuliah</label>
-                                <select name="pilganmatkul" class="form-control" disabled>
+                                <label>Mata Kuliah</label>
+                                <select name="matkul" class="form-control" disabled>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
@@ -738,34 +738,34 @@
 
                         <div class="form-group">
                             <label for="exampleInputSoal">Soal</label>
-                            <input type="textarea" name="pilgansoal" id="pilgansoal"></input>
+                            <input type="textarea" name="soal" id="add_soal_pilgan"></input>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputSoal">Jawaban Benar</label>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" value="A" name="pilganjawaban">
+                                <input class="form-check-input" type="radio" value="A" name="jawaban">
                                 <label class="form-check-label">A</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" value="B" name="pilganjawaban">
+                                <input class="form-check-input" type="radio" value="B" name="jawaban">
                                 <label class="form-check-label">B</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" value="C" name="pilganjawaban">
+                                <input class="form-check-input" type="radio" value="C" name="jawaban">
                                 <label class="form-check-label">C</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" value="D" name="pilganjawaban">
+                                <input class="form-check-input" type="radio" value="D" name="jawaban">
                                 <label class="form-check-label">D</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" value="E" name="pilganjawaban">
+                                <input class="form-check-input" type="radio" value="E" name="jawaban">
                                 <label class="form-check-label">E</label>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="bobot_nilai">Bobot Soal</label>
-                            <input type="text" class="form-control col-1">
+                            <label>Bobot Soal</label>
+                            <input type="text" class="form-control col-1" name="bobot">
                         </div>
                     </div>
                     <!-- /.card-body -->
@@ -773,64 +773,6 @@
             <div class="card-footer modal-footer justify-content-right">
                 <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
                 <button type="submit" class="btn btn-sm bg-green tambah">TAMBAH</button>
-            </div>
-            </form>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
-
-<!-- Modal Edit Pilgan -->
-<div class="modal fade" id="edit_pilgan">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Edit Soal Pilihan Ganda</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="pilganeditsoal" method="post">
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="exampleInputSoal">Soal</label>
-                            <input type="textarea" name="editpilgansoal" id="editpilgansoal"></input>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputSoal">Jawaban Benar</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" value="A" name="editpilganjawaban">
-                                <label class="form-check-label">A</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" value="B" name="editpilganjawaban">
-                                <label class="form-check-label">B</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" value="C" name="editpilganjawaban">
-                                <label class="form-check-label">C</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" value="D" name="editpilganjawaban">
-                                <label class="form-check-label">D</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" value="E" name="editpilganjawaban">
-                                <label class="form-check-label">E</label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="bobot_nilai">Bobot Soal</label>
-                            <input type="text" class="form-control col-1">
-                        </div>
-                    </div>
-                    <!-- /.card-body -->
-            </div>
-            <div class="card-footer modal-footer justify-content-right">
-                <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
-                <button type="submit" class="btn btn-sm bg-blue tambah">EDIT</button>
             </div>
             </form>
         </div>
@@ -850,12 +792,12 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="essaytambahsoal" method="post">
+                <form action="add_essay" method="post">
                     <div class="card-body">
                         <div class="row">
                             <div class="form-group col">
-                                <label for="essaydosen">Dosen</label>
-                                <select name="essaydosen" class="form-control">
+                                <label>Dosen</label>
+                                <select name="dosen" class="form-control">
                                     <option value="#">NAMA DOSEN</option>
                                     <option value="#">NAMA DOSEN</option>
                                     <option value="#">NAMA DOSEN</option>
@@ -863,8 +805,8 @@
                             </div>
 
                             <div class="form-group col">
-                                <label for="essaymatkul">Mata Kuliah</label>
-                                <select name="essaymatkul" class="form-control" disabled>
+                                <label>Mata Kuliah</label>
+                                <select name="matkul" class="form-control" disabled>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
@@ -874,17 +816,17 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="exampleInputSoal">Soal</label>
-                            <input type="textarea" name="essaysoal" id="essaysoal"></input>
+                            <label>Soal</label>
+                            <input type="textarea" name="soal" id="add_soal_essay"></input>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputSoal">Jawaban</label>
-                            <input type="textarea" name="essayjawaban" id="essayjawaban"></input>
+                            <label>Jawaban</label>
+                            <input type="textarea" name="jawaban" id="add_jawaban_essay"></input>
                         </div>
 
                         <div class="form-group">
-                            <label for="bobot_nilai">Bobot Soal</label>
-                            <input type="text" name="essaybobot" class="form-control col-1">
+                            <label>Bobot Soal</label>
+                            <input type="text" name="bobot" class="form-control col-1">
                         </div>
                     </div>
                     <!-- /.card-body -->
@@ -911,12 +853,12 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form action="filetambahsoal" method="post">
+                <form action="add_file" method="post">
                     <div class="card-body">
                         <div class="row">
                             <div class="form-group col">
-                                <label for="essaydosen">Dosen</label>
-                                <select name="essaydosen" class="form-control">
+                                <label>Dosen</label>
+                                <select name="dosen" class="form-control">
                                     <option value="#">NAMA DOSEN</option>
                                     <option value="#">NAMA DOSEN</option>
                                     <option value="#">NAMA DOSEN</option>
@@ -924,8 +866,8 @@
                             </div>
 
                             <div class="form-group col">
-                                <label for="essaymatkul">Mata Kuliah</label>
-                                <select name="essaymatkul" class="form-control" disabled>
+                                <label>Mata Kuliah</label>
+                                <select name="matkul" class="form-control" disabled>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
                                     <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
@@ -944,8 +886,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="bobot_nilai">Bobot Soal</label>
-                            <input type="text" name="essaybobot" class="form-control col-1">
+                            <label>Bobot Soal</label>
+                            <input type="text" name="bobot" class="form-control col-1">
                         </div>
                     </div>
                     <!-- /.card-body -->
@@ -953,6 +895,206 @@
             <div class="card-footer modal-footer justify-content-right">
                 <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
                 <button type="submit" class="btn btn-sm bg-green tambah">TAMBAH</button>
+            </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal Edit Pilgan -->
+<div class="modal fade" id="ubah_pilgan">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Soal Pilihan Ganda</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="edit_pilgan" method="post">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group col">
+                                <label>Dosen</label>
+                                <select name="dosen" class="form-control">
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col">
+                                <label>Mata Kuliah</label>
+                                <select name="matkul" class="form-control">
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>Soal</label>
+                            <input type="textarea" name="soal" id="edit_soal_pilgan"></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Jawaban Benar</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="A" name="jawaban">
+                                <label class="form-check-label">A</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="B" name="jawaban">
+                                <label class="form-check-label">B</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="C" name="jawaban">
+                                <label class="form-check-label">C</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="D" name="jawaban">
+                                <label class="form-check-label">D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="E" name="jawaban">
+                                <label class="form-check-label">E</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Bobot Soal</label>
+                            <input type="text" class="form-control col-1" name="bobot">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+            </div>
+            <div class="card-footer modal-footer justify-content-right">
+                <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
+                <button type="submit" class="btn btn-sm bg-blue edit">SIMPAN</button>
+            </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal Edit Essay -->
+<div class="modal fade" id="ubah_essay">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Soal Essay</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="edit_essay" method="post">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group col">
+                                <label>Dosen</label>
+                                <select name="dosen" class="form-control">
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col">
+                                <label>Mata Kuliah</label>
+                                <select name="matkul" class="form-control">
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label>Soal</label>
+                            <input type="textarea" name="soal" id="edit_soal_essay"></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Jawaban</label>
+                            <input type="textarea" name="soal" id="edit_jawaban_essay"></input>
+                        </div>
+                        <div class="form-group">
+                            <label>Bobot Soal</label>
+                            <input type="text" class="form-control col-1" name="bobot">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+            </div>
+            <div class="card-footer modal-footer justify-content-right">
+                <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
+                <button type="submit" class="btn btn-sm bg-blue edit">SIMPAN</button>
+            </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal Edit File -->
+<div class="modal fade" id="ubah_file">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Soal File</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="edit_file" method="post">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group col">
+                                <label>Dosen</label>
+                                <select name="dosen" class="form-control">
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col">
+                                <label>Mata Kuliah</label>
+                                <select name="matkul" class="form-control" disabled>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputSoal">Upload Soal</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile" name="filesoal"
+                                    accept=".jpeg,.jpg,.pdf,.png">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Bobot Soal</label>
+                            <input type="text" name="bobot" class="form-control col-1">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+            </div>
+            <div class="card-footer modal-footer justify-content-right">
+                <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
+                <button type="submit" class="btn btn-sm bg-blue edit">SIMPAN</button>
             </div>
             </form>
         </div>

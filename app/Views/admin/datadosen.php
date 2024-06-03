@@ -157,7 +157,7 @@
             </div>
             <div class="modal-body">
                 <!-- form start -->
-                <form class="form-horizontal">
+                <form action="#" method="post" class="form-horizontal">
                     <div class="card-body">
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">NIP</label>
@@ -168,13 +168,13 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Nama</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="nama_dosen" placeholder="Nama">
+                                <input type="text" class="form-control" name="dosen" placeholder="Nama">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Email</label>
                             <div class="col-sm-9">
-                                <input type="email" class="form-control" name="email_dosen" placeholder="Email">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -186,7 +186,7 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Jurusan</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2bs4" style="width: 100%;">
+                            <select class="form-control select2bs4" style="width: 100%;" name="jurusan">
                                 <option selected="selected" disabled>Jurusan</option>
                                 <option value="Teknik Informatika">Teknik Informatika</option>
                                 <option value="Sistem Komputer">Sistem Komputer</option>
@@ -197,7 +197,7 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">MK Ajar</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2bs4" multiple="multiple" name="semester" style="width: 100%;">
+                            <select class="form-control select2bs4" multiple="multiple" name="matakuliah" style="width: 100%;">
                                 <!-- <option selected="selected" disabled>SEMESTER</option> -->
                                 <option value="#">Mata Kuliah - Sesuai Jurusan</option>
                                 <option value="#">Mata Kuliah - Sesuai Jurusan</option>
@@ -207,12 +207,12 @@
                         </div>
                     </div>
                     <!-- /.card-body -->
-                </form>
             </div>
             <div class="card-footer modal-footer justify-content-right">
                 <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
                 <button type="submit" class="btn btn-sm bg-green tambah">TAMBAH</button>
             </div>
+            </form>
         </div>
         <!-- /.modal-content -->
     </div>
@@ -230,7 +230,7 @@
             </div>
             <div class="modal-body">
                 <!-- form start -->
-                <form class="form-horizontal">
+                <form action="#" method="post" class="form-horizontal">
                     <div class="card-body">
                     <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">NIP</label>
@@ -241,13 +241,13 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Nama</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" name="nama_dosen" placeholder="Nama">
+                                <input type="text" class="form-control" name="dosen" placeholder="Nama">
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Email</label>
                             <div class="col-sm-9">
-                                <input type="email" class="form-control" name="email_dosen" placeholder="Email">
+                                <input type="email" class="form-control" name="email" placeholder="Email">
                             </div>
                         </div>
                         <div class="form-group row">
@@ -259,7 +259,7 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">Jurusan</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2bs4" style="width: 100%;">
+                            <select class="form-control select2bs4" style="width: 100%;" name="jurusan">
                                 <option selected="selected" disabled>Jurusan</option>
                                 <option value="Teknik Informatika">Teknik Informatika</option>
                                 <option value="Sistem Komputer">Sistem Komputer</option>
@@ -270,7 +270,7 @@
                         <div class="form-group row">
                             <label for="dosen" class="col-sm-3 col-form-label">MK Ajar</label>
                             <div class="col-sm-9">
-                            <select class="form-control select2bs4" multiple="multiple" name="semester" style="width: 100%;">
+                            <select class="form-control select2bs4" multiple="multiple" name="matakuliah" style="width: 100%;">
                                 <!-- <option selected="selected" disabled>SEMESTER</option> -->
                                 <option value="#">Mata Kuliah - Sesuai Jurusan</option>
                                 <option value="#">Mata Kuliah - Sesuai Jurusan</option>
@@ -280,12 +280,12 @@
                         </div>
                     </div>
                     <!-- /.card-body -->
-                </form>
             </div>
             <div class="card-footer modal-footer justify-content-right">
                 <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
-                <button type="button" class="btn btn-sm bg-blue edit">SIMPAN</button>
+                <button type="submit" class="btn btn-sm bg-blue edit">SIMPAN</button>
             </div>
+            </form>
         </div>
         <!-- /.modal-content -->
     </div>
