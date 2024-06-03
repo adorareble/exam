@@ -92,7 +92,7 @@
             </div>
             <div class="modal-body">
                 <!-- form start -->
-                <form class="form-horizontal">
+                <form  action="filetambahsoal" method="post" class="form-horizontal">
                     <div class="card-body">
                         <div class="form-group row">
                             <label for="jurusan" class="col-sm-2 col-form-label">Jurusan</label>
@@ -102,12 +102,12 @@
                         </div>
                     </div>
                     <!-- /.card-body -->
-                </form>
             </div>
             <div class="card-footer modal-footer justify-content-right">
                 <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
                 <button type="submit" class="btn btn-sm bg-green tambah">TAMBAH</button>
             </div>
+            </form>
         </div>
         <!-- /.modal-content -->
     </div>
@@ -125,7 +125,7 @@
             </div>
             <div class="modal-body">
                 <!-- form start -->
-                <form class="form-horizontal">
+                <form  action="filetambahsoal" method="post" class="form-horizontal">
                     <div class="card-body">
                         <div class="form-group row">
                             <label for="jurusan" class="col-sm-2 col-form-label">Jurusan</label>
@@ -135,12 +135,12 @@
                         </div>
                     </div>
                     <!-- /.card-body -->
-                </form>
             </div>
             <div class="card-footer modal-footer justify-content-right">
                 <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
-                <button type="button" class="btn btn-sm bg-blue edit">SIMPAN</button>
+                <button type="submit" class="btn btn-sm bg-blue edit">SIMPAN</button>
             </div>
+            </form>
         </div>
         <!-- /.modal-content -->
     </div>

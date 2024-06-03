@@ -47,7 +47,7 @@ class AdminController extends Controller
     }
 
     public function view_admin_banksoal(){
-        return view('admin\header').view('admin\input_essay').view('admin\input_pilgan').view('admin\input_file').view('admin\footer');
+        return view('admin\header').view('admin\banksoal').view('admin\footer');
     }
     
     public function view_admin_userM(){

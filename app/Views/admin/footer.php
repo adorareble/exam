@@ -23,7 +23,10 @@
 <script>
 $(function() {
     // Summernote
-    $('#summernote').summernote()
+    $('#pilgansoal').summernote()
+    $('#editpilgansoal').summernote()
+    $('#essaysoal').summernote()
+    $('#essayjawaban').summernote()
 
     // CodeMirror
     CodeMirror.fromTextArea(document.getElementById("codeMirrorDemo"), {
@@ -50,8 +53,6 @@ $(function() {
 <script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 <script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
 <script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.min.js"></script>
 <!-- Page specific script -->
 <script>
 $(function() {

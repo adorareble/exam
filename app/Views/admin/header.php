@@ -131,7 +131,7 @@ $session = \Config\Services::session();
                             <a href="#" class="nav-link">
                                 <i class="nav-icon far fa-file"></i>
                                 <p>
-                                    Master Data
+                                    MASTER DATA
                                     <i class="right fas fa-angle-left"></i>
                                 </p>
                             </a>
@@ -194,7 +194,7 @@ $session = \Config\Services::session();
                         <li class="nav-item">
                                     <a href="master_banksoal" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Bank Soal</p>
+                                        <p>BANK SOAL</p>
                                     </a>
                                 </li>
                         <li class="nav-header">Administrator</li>

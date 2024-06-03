@@ -1,0 +1,962 @@
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1>BANK SOAL</h1>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+
+                        <div class="card-body">
+                            <div class="mt-2 mb-4">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle"
+                                        data-toggle="dropdown"><i class="fa fa-plus"></i> Add Soal
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu" role="menu">
+                                        <a class="dropdown-item" data-toggle="modal"
+                                            data-target="#tambah_pilgan">Pilihan Ganda</a>
+                                        <a class="dropdown-item" data-toggle="modal"
+                                            data-target="#tambah_essay">Essay</a>
+                                        <a class="dropdown-item" data-toggle="modal" data-target="#tambah_file">File</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 10px">No.</th>
+                                        <th>Nama Dosen</th>
+                                        <th>Mata Kuliah</th>
+                                        <th>Jenis Soal</th>
+                                        <th>Jumlah Soal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>Atiqah</td>
+                                        <td>Embeded System</td>
+                                        <td>Pilihan Ganda</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>Atiqah</td>
+                                        <td>Embeded System</td>
+                                        <td>Pilihan Ganda</td>
+                                        <td>15</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>Atiqah</td>
+                                        <td>Embeded System</td>
+                                        <td>Pilihan Ganda</td>
+                                        <td>15</td>
+                                    </tr>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <!-- <div class="card-header">
+                            <h3 class="card-title">DataTable with default features</h3>
+                        </div> -->
+
+                        <!-- /.card-header -->
+                        <div class="card-header">
+                            <h3 class="card-title">Daftar Soal Pilihan Ganda</h3>
+                        </div>
+                        <!-- ./card-header -->
+                        <div class="card-body p-0">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                        <td>
+                                            <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                            <b>Atiqah (NAMA DOSEN)</b>
+                                        </td>
+                                    </tr>
+                                    <tr class="expandable-body">
+                                        <td>
+                                            <div class="p-0">
+                                                <table class="table table-hover table-sm">
+                                                    <tbody>
+                                                        <tr data-widget="expandable-table" aria-expanded="false">
+                                                            <td>
+                                                                <i
+                                                                    class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                                                <b>Matkul 1</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="expandable-body">
+                                                            <td>
+                                                                <div class="p-0">
+                                                                    <table class="table table-hover">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Kunci Jawaban</th>
+                                                                                <th>Bobot Nilai</th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>B</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="4">
+                                                                                    <p class="">Lorem Ipsum is simply
+                                                                                        dummy text of the printing and
+                                                                                        typesetting industry. Lorem
+                                                                                        Ipsum has been the industry's
+                                                                                        standard dummy text ever since
+                                                                                        the 1500s, when an unknown
+                                                                                        printer took a galley of type
+                                                                                        and scrambled it to make a type
+                                                                                        specimen book. It has survived
+                                                                                        not only five centuries, but
+                                                                                        also the leap into electronic
+                                                                                        typesetting, remaining
+                                                                                        essentially unchanged. It was
+                                                                                        popularised in the 1960s with
+                                                                                        the release of Letraset sheets
+                                                                                        containing Lorem Ipsum passages,
+                                                                                        and more recently with desktop
+                                                                                        publishing software like Aldus
+                                                                                        PageMaker including versions of
+                                                                                        Lorem Ipsum.</p>
+                                                                                    <p class=""><b>A. </b>Ini
+                                                                                        A<br><b>B.</b> Ini
+                                                                                        B<br><b>C.</b> Ini
+                                                                                        C<br><b>D.</b> Ini
+                                                                                        D<br><b>E.</b> Ini E</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>B</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="4">
+                                                                                    <p class="">Lorem Ipsum is simply
+                                                                                        dummy text of the printing and
+                                                                                        typesetting industry. Lorem
+                                                                                        Ipsum has been the industry's
+                                                                                        standard dummy text ever since
+                                                                                        the 1500s, when an unknown
+                                                                                        printer took a galley of type
+                                                                                        and scrambled it to make a type
+                                                                                        specimen book. It has survived
+                                                                                        not only five centuries, but
+                                                                                        also the leap into electronic
+                                                                                        typesetting, remaining
+                                                                                        essentially unchanged. It was
+                                                                                        popularised in the 1960s with
+                                                                                        the release of Letraset sheets
+                                                                                        containing Lorem Ipsum passages,
+                                                                                        and more recently with desktop
+                                                                                        publishing software like Aldus
+                                                                                        PageMaker including versions of
+                                                                                        Lorem Ipsum.</p>
+                                                                                    <p class=""><b>A. </b>Ini
+                                                                                        A<br><b>B.</b> Ini
+                                                                                        B<br><b>C.</b> Ini
+                                                                                        C<br><b>D.</b> Ini
+                                                                                        D<br><b>E.</b> Ini E</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>B</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="4">
+                                                                                    <p class="">Lorem Ipsum is simply
+                                                                                        dummy text of the printing and
+                                                                                        typesetting industry. Lorem
+                                                                                        Ipsum has been the industry's
+                                                                                        standard dummy text ever since
+                                                                                        the 1500s, when an unknown
+                                                                                        printer took a galley of type
+                                                                                        and scrambled it to make a type
+                                                                                        specimen book. It has survived
+                                                                                        not only five centuries, but
+                                                                                        also the leap into electronic
+                                                                                        typesetting, remaining
+                                                                                        essentially unchanged. It was
+                                                                                        popularised in the 1960s with
+                                                                                        the release of Letraset sheets
+                                                                                        containing Lorem Ipsum passages,
+                                                                                        and more recently with desktop
+                                                                                        publishing software like Aldus
+                                                                                        PageMaker including versions of
+                                                                                        Lorem Ipsum.</p>
+                                                                                    <p class=""><b>A. </b>Ini
+                                                                                        A<br><b>B.</b> Ini
+                                                                                        B<br><b>C.</b> Ini
+                                                                                        C<br><b>D.</b> Ini
+                                                                                        D<br><b>E.</b> Ini E</p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <!-- <div class="card-header">
+                            <h3 class="card-title">DataTable with default features</h3>
+                        </div> -->
+
+                        <!-- /.card-header -->
+                        <div class="card-header">
+                            <h3 class="card-title">Daftar Soal Essay</h3>
+                        </div>
+                        <!-- ./card-header -->
+                        <div class="card-body p-0">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                        <td>
+                                            <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                            <b>Atiqah (NAMA DOSEN)</b>
+                                        </td>
+                                    </tr>
+                                    <tr class="expandable-body">
+                                        <td>
+                                            <div class="p-0">
+                                                <table class="table table-hover table-sm">
+                                                    <tbody>
+                                                        <tr data-widget="expandable-table" aria-expanded="false">
+                                                            <td>
+                                                                <i
+                                                                    class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                                                <b>Matkul 1</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="expandable-body">
+                                                            <td>
+                                                                <div class="p-0">
+                                                                    <table class="table table-hover">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Bobot Nilai</th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="3">
+                                                                                    <p><b>Soal:</b></p>
+                                                                                    <p>Lorem Ipsum is simply dummy text
+                                                                                        of the printing and typesetting
+                                                                                        industry. Lorem Ipsum has been
+                                                                                        the industry's standard dummy
+                                                                                        text ever since the 1500s, when
+                                                                                        an unknown printer took a galley
+                                                                                        of type and scrambled it to make
+                                                                                        a type specimen book. It has
+                                                                                        survived not only five
+                                                                                        centuries, but also the leap
+                                                                                        into electronic typesetting,
+                                                                                        remaining essentially unchanged.
+                                                                                        It was popularised in the 1960s
+                                                                                        with the release of Letraset
+                                                                                        sheets containing Lorem Ipsum
+                                                                                        passages, and more recently with
+                                                                                        desktop publishing software like
+                                                                                        Aldus PageMaker including
+                                                                                        versions of Lorem Ipsum.</p>
+                                                                                    <p><b>Jawaban:</b></p>
+                                                                                    <p>Lorem Ipsum is simply
+                                                                                        dummy text of the printing and
+                                                                                        typesetting industry. Lorem
+                                                                                        Ipsum has been the industry's
+                                                                                        standard dummy text ever since
+                                                                                        the 1500s, when an unknown
+                                                                                        printer took a galley of type
+                                                                                        and scrambled it to make a type
+                                                                                        specimen book. It has survived
+                                                                                        not only five centuries, but
+                                                                                        also the leap into electronic
+                                                                                        typesetting, remaining
+                                                                                        essentially unchanged. It was
+                                                                                        popularised in the 1960s with
+                                                                                        the release of Letraset sheets
+                                                                                        containing Lorem Ipsum passages,
+                                                                                        and more recently with desktop
+                                                                                        publishing software like Aldus
+                                                                                        PageMaker including versions of
+                                                                                        Lorem Ipsum.<br></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="3">
+                                                                                    <p><b>Soal:</b></p>
+                                                                                    <p>Lorem Ipsum is simply dummy text
+                                                                                        of the printing and typesetting
+                                                                                        industry. Lorem Ipsum has been
+                                                                                        the industry's standard dummy
+                                                                                        text ever since the 1500s, when
+                                                                                        an unknown printer took a galley
+                                                                                        of type and scrambled it to make
+                                                                                        a type specimen book. It has
+                                                                                        survived not only five
+                                                                                        centuries, but also the leap
+                                                                                        into electronic typesetting,
+                                                                                        remaining essentially unchanged.
+                                                                                        It was popularised in the 1960s
+                                                                                        with the release of Letraset
+                                                                                        sheets containing Lorem Ipsum
+                                                                                        passages, and more recently with
+                                                                                        desktop publishing software like
+                                                                                        Aldus PageMaker including
+                                                                                        versions of Lorem Ipsum.</p>
+                                                                                    <p><b>Jawaban:</b></p>
+                                                                                    <p>Lorem Ipsum is simply
+                                                                                        dummy text of the printing and
+                                                                                        typesetting industry. Lorem
+                                                                                        Ipsum has been the industry's
+                                                                                        standard dummy text ever since
+                                                                                        the 1500s, when an unknown
+                                                                                        printer took a galley of type
+                                                                                        and scrambled it to make a type
+                                                                                        specimen book. It has survived
+                                                                                        not only five centuries, but
+                                                                                        also the leap into electronic
+                                                                                        typesetting, remaining
+                                                                                        essentially unchanged. It was
+                                                                                        popularised in the 1960s with
+                                                                                        the release of Letraset sheets
+                                                                                        containing Lorem Ipsum passages,
+                                                                                        and more recently with desktop
+                                                                                        publishing software like Aldus
+                                                                                        PageMaker including versions of
+                                                                                        Lorem Ipsum.<br></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="3">
+                                                                                    <p><b>Soal:</b></p>
+                                                                                    <p>Lorem Ipsum is simply dummy text
+                                                                                        of the printing and typesetting
+                                                                                        industry. Lorem Ipsum has been
+                                                                                        the industry's standard dummy
+                                                                                        text ever since the 1500s, when
+                                                                                        an unknown printer took a galley
+                                                                                        of type and scrambled it to make
+                                                                                        a type specimen book. It has
+                                                                                        survived not only five
+                                                                                        centuries, but also the leap
+                                                                                        into electronic typesetting,
+                                                                                        remaining essentially unchanged.
+                                                                                        It was popularised in the 1960s
+                                                                                        with the release of Letraset
+                                                                                        sheets containing Lorem Ipsum
+                                                                                        passages, and more recently with
+                                                                                        desktop publishing software like
+                                                                                        Aldus PageMaker including
+                                                                                        versions of Lorem Ipsum.</p>
+                                                                                    <p><b>Jawaban:</b></p>
+                                                                                    <p>Lorem Ipsum is simply
+                                                                                        dummy text of the printing and
+                                                                                        typesetting industry. Lorem
+                                                                                        Ipsum has been the industry's
+                                                                                        standard dummy text ever since
+                                                                                        the 1500s, when an unknown
+                                                                                        printer took a galley of type
+                                                                                        and scrambled it to make a type
+                                                                                        specimen book. It has survived
+                                                                                        not only five centuries, but
+                                                                                        also the leap into electronic
+                                                                                        typesetting, remaining
+                                                                                        essentially unchanged. It was
+                                                                                        popularised in the 1960s with
+                                                                                        the release of Letraset sheets
+                                                                                        containing Lorem Ipsum passages,
+                                                                                        and more recently with desktop
+                                                                                        publishing software like Aldus
+                                                                                        PageMaker including versions of
+                                                                                        Lorem Ipsum.<br></p>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- /.container-fluid -->
+    </section>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <!-- <div class="card-header">
+                            <h3 class="card-title">DataTable with default features</h3>
+                        </div> -->
+
+                        <!-- /.card-header -->
+                        <div class="card-header">
+                            <h3 class="card-title">Daftar Soal File</h3>
+                        </div>
+                        <!-- ./card-header -->
+                        <div class="card-body p-0">
+                            <table class="table table-hover">
+                                <tbody>
+                                    <tr data-widget="expandable-table" aria-expanded="false">
+                                        <td>
+                                            <i class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                            <b>Atiqah (NAMA DOSEN)</b>
+                                        </td>
+                                    </tr>
+                                    <tr class="expandable-body">
+                                        <td>
+                                            <div class="p-0">
+                                                <table class="table table-hover table-sm">
+                                                    <tbody>
+                                                        <tr data-widget="expandable-table" aria-expanded="false">
+                                                            <td>
+                                                                <i
+                                                                    class="expandable-table-caret fas fa-caret-right fa-fw"></i>
+                                                                <b>Matkul 1</b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="expandable-body">
+                                                            <td>
+                                                                <div class="p-0">
+                                                                    <table class="table table-hover">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>Bobot Nilai</th>
+                                                                                <th>Action</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="3">
+                                                                                    <iframe
+                                                                                        src="asset\CV_Indra Gifari Afriansyah_NEW.pdf"
+                                                                                        width="1080"
+                                                                                        height="1920"></iframe>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="3">
+                                                                                <img src="asset/Congrats.png" alt="Deskripsi gambar" width="1080" height="1920">
+
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr data-widget="expandable-table"
+                                                                                aria-expanded="false">
+                                                                                <td>1</td>
+                                                                                <td>12</td>
+                                                                                <td><button data-toggle="modal"
+                                                                                        data-target="#edit_pilgan"
+                                                                                        class="btn btn-xs bg-blue"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-edit"></i>
+                                                                                        Edit</button>
+                                                                                    <button
+                                                                                        class="btn btn-xs bg-red hapus"
+                                                                                        type="button"><i
+                                                                                            class="fa fa-trash"></i>
+                                                                                        Delete</button>
+                                                                                </td>
+                                                                            </tr>
+                                                                            <tr class="expandable-body">
+                                                                                <td colspan="3">
+                                                                                    <img src="asset/Congrats.png"
+                                                                                        alt="Deskripsi gambar"
+                                                                                        width="1080" height="1920">
+
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="card-footer">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+
+        <!-- /.container-fluid -->
+    </section>
+</div>
+<!-- /.content-wrapper -->
+
+<!-- Modal Add Pilgan -->
+<div class="modal fade" id="tambah_pilgan">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Tambah Soal Pilihan Ganda</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="pilgantambahsoal" method="post">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="exampleInputSeri">Dosen</label>
+                                <select name="pilgandosen" class="form-control">
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="exampleInputSeri">Mata Kuliah</label>
+                                <select name="pilganmatkul" class="form-control" disabled>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputSoal">Soal</label>
+                            <input type="textarea" name="pilgansoal" id="pilgansoal"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputSoal">Jawaban Benar</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="A" name="pilganjawaban">
+                                <label class="form-check-label">A</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="B" name="pilganjawaban">
+                                <label class="form-check-label">B</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="C" name="pilganjawaban">
+                                <label class="form-check-label">C</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="D" name="pilganjawaban">
+                                <label class="form-check-label">D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="E" name="pilganjawaban">
+                                <label class="form-check-label">E</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bobot_nilai">Bobot Soal</label>
+                            <input type="text" class="form-control col-1">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+            </div>
+            <div class="card-footer modal-footer justify-content-right">
+                <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
+                <button type="submit" class="btn btn-sm bg-green tambah">TAMBAH</button>
+            </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal Edit Pilgan -->
+<div class="modal fade" id="edit_pilgan">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit Soal Pilihan Ganda</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="pilganeditsoal" method="post">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="exampleInputSoal">Soal</label>
+                            <input type="textarea" name="editpilgansoal" id="editpilgansoal"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputSoal">Jawaban Benar</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="A" name="editpilganjawaban">
+                                <label class="form-check-label">A</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="B" name="editpilganjawaban">
+                                <label class="form-check-label">B</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="C" name="editpilganjawaban">
+                                <label class="form-check-label">C</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="D" name="editpilganjawaban">
+                                <label class="form-check-label">D</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" value="E" name="editpilganjawaban">
+                                <label class="form-check-label">E</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="bobot_nilai">Bobot Soal</label>
+                            <input type="text" class="form-control col-1">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+            </div>
+            <div class="card-footer modal-footer justify-content-right">
+                <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
+                <button type="submit" class="btn btn-sm bg-blue tambah">EDIT</button>
+            </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal Add Essay -->
+<div class="modal fade" id="tambah_essay">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Tambah Soal Essay</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="essaytambahsoal" method="post">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="essaydosen">Dosen</label>
+                                <select name="essaydosen" class="form-control">
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="essaymatkul">Mata Kuliah</label>
+                                <select name="essaymatkul" class="form-control" disabled>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputSoal">Soal</label>
+                            <input type="textarea" name="essaysoal" id="essaysoal"></input>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputSoal">Jawaban</label>
+                            <input type="textarea" name="essayjawaban" id="essayjawaban"></input>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bobot_nilai">Bobot Soal</label>
+                            <input type="text" name="essaybobot" class="form-control col-1">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+            </div>
+            <div class="card-footer modal-footer justify-content-right">
+                <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
+                <button type="submit" class="btn btn-sm bg-green tambah">TAMBAH</button>
+            </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal Add File -->
+<div class="modal fade" id="tambah_file">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Tambah Soal File</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="filetambahsoal" method="post">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="form-group col">
+                                <label for="essaydosen">Dosen</label>
+                                <select name="essaydosen" class="form-control">
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                    <option value="#">NAMA DOSEN</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group col">
+                                <label for="essaymatkul">Mata Kuliah</label>
+                                <select name="essaymatkul" class="form-control" disabled>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                    <option value="#">MATA KULIAH AJAR - SESUAI DOSEN</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleInputSoal">Upload Soal</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile" name="filesoal"
+                                    accept=".jpeg,.jpg,.pdf,.png">
+                                <label class="custom-file-label" for="customFile">Choose file</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bobot_nilai">Bobot Soal</label>
+                            <input type="text" name="essaybobot" class="form-control col-1">
+                        </div>
+                    </div>
+                    <!-- /.card-body -->
+            </div>
+            <div class="card-footer modal-footer justify-content-right">
+                <button type="button" class="btn btn-sm bg-red" data-dismiss="modal">BATAL</button>
+                <button type="submit" class="btn btn-sm bg-green tambah">TAMBAH</button>
+            </div>
+            </form>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
