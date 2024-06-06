@@ -65,6 +65,13 @@ $(function() {
         "autoWidth": false,
         "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+    $("#example3").DataTable({
+        "responsive": true,
+        "lengthChange": false,
+        "autoWidth": false,
+        "paging": true,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example3_wrapper .col-md-6:eq(0)');
     $('#example2').DataTable({
         "paging": true,
         "lengthChange": false,
@@ -74,6 +81,12 @@ $(function() {
         "autoWidth": false,
         "responsive": true,
     });
+    $("#listujian").DataTable({
+        "responsive": true,
+        "lengthChange": false,
+        "autoWidth": false,
+        // "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+    }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
 });
 </script>
 <!-- SweetAlert2 -->
@@ -146,6 +159,22 @@ $(function() {
 </script>
 <?php } ?>
 
+<script>
+    $(document).ready(function() {
+		setInterval(function() {
+			var date = new Date();
+			var h = date.getHours(),
+				m = date.getMinutes(),
+				s = date.getSeconds();
+			h = ("0" + h).slice(-2);
+			m = ("0" + m).slice(-2);
+			s = ("0" + s).slice(-2);
+
+			var time = h + ":" + m + ":" + s;
+			$('.live-clock').html(time);
+		}, 1000);
+	});
+</script>
 </body>
 
 </html>

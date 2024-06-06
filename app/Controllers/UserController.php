@@ -41,7 +41,7 @@ class UserController extends Controller
             if ($user['role'] == "admin") {
                 return redirect()->to('admin_dashboard');
             } elseif ($user['role'] == "dosen") {
-                return redirect()->to('dosen_dashbord');
+                return redirect()->to('dosen_dashboard');
             } elseif ($user['role'] == "mahasiswa") {
                 return redirect()->to('mahasiswa_dashboard');
             } else {

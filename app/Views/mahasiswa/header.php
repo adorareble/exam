@@ -94,7 +94,7 @@ $session = \Config\Services::session();
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="index3.html" class="brand-link  bg-cyan">
+            <a href="index3.html" class="brand-link bg-cyan">
                 <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8">
                 <span class="brand-text font-weight-light">ExamSITE</span>
@@ -113,97 +113,24 @@ $session = \Config\Services::session();
                 </div>
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent nav-flat" data-widget="treeview" role="menu"
-                        data-accordion="false">
+                    <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent nav-flat" data-widget="treeview"
+                        role="menu" data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item">
-                            <a href="admin_dashboard" class="nav-link">
+                            <a href="mahasiswa_dashboard" class="nav-link">
                                 <i class="nav-icon far fa-calendar-alt"></i>
                                 <p>
                                     Dashboard
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-header">Main Menu</li>
-
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-file"></i>
-                                <p>
-                                    MASTER DATA
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
+                            <a href="ujian" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>UJIAN</p>
                             </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="master_jurusan" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Jurusan</p>
-                                    </a>
-                                </li>
-                                <!-- <li class="nav-item">
-                                    <a href="master_semester" class="nav-link menu-is-opening menu-open">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Semester</p>
-                                    </a>
-                                </li> -->
-                                <li class="nav-item">
-                                    <a href="master_matakuliah" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Mata Kuliah</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="master_datadosen" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Data Dosen</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="master_datamahasiswa" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Data Mahasiswa</p>
-                                    </a>
-                                </li>
-                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon far fa-file"></i>
-                                <p>
-                                    RELASI
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <!-- <li class="nav-item">
-                                    <a href="master_semester_dosen" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Semester - Dosen</p>
-                                    </a>
-                                </li> -->
-                                <li class="nav-item">
-                                    <a href="master_jurusan_matakuliah" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Jurusan - Mata Kuliah</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                                    <a href="master_banksoal" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>BANK SOAL</p>
-                                    </a>
-                                </li>
-                        <li class="nav-header">Administrator</li>
-                        <li class="nav-item">
-                                    <a href="master_user" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>User Management</p>
-                                    </a>
-                                </li>
                         <li class="nav-header"></li>
                         <li class="nav-item">
                             <a href="logout" class="nav-link">

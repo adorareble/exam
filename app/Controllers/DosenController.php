@@ -18,19 +18,21 @@ class DosenController extends Controller
         return view('dosen\header').view('dosen\dashboard').view('dosen\footer');
     }
     
-    public function input_pilgan(){
-        return view('header').view('input_pilgan').view('footer');
-    }
 
-    public function input_essay(){
-        return view('header').view('input_essay').view('footer');
-    }
-
-    public function input_file(){
-        return view('header').view('input_file').view('footer');
+    public function manageujian(){
+        return view('dosen\header').view('dosen\manageujian').view('dosen\footer');
     }
     
-    public function manage_soal(){
-        return view('header').view('manage_soal').view('footer');
+    public function banksoal(){
+        return view('dosen\header').view('dosen\banksoal').view('dosen\footer');
     }
+    
+    public function hasilujian(){
+        return view('dosen\header').view('dosen\hasilujian').view('dosen\footer');
+    }
+
+    public function datamahasiswa(){
+        return view('dosen\header').view('dosen\datamahasiswa').view('dosen\footer');
+    }
+
 }
