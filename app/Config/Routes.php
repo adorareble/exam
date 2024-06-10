@@ -44,6 +44,9 @@ $routes->get('hasilujian', 'DosenController::hasilujian');
 // Mahasiswa Sidebar
 $routes->get('mahasiswa_dashboard', 'MahasiswaController::index');
 $routes->get('ujian', 'MahasiswaController::ujian');
+$routes->post('exam_pilgan', 'MahasiswaController::exam_pilgan');
+$routes->post('exam_essay', 'MahasiswaController::exam_essay');
+$routes->post('exam_file', 'MahasiswaController::exam_file');
 
 
 

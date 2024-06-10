@@ -23,4 +23,15 @@ class MahasiswaController extends Controller
         return view('mahasiswa\header').view('mahasiswa\ujian').view('mahasiswa\footer');
     }
 
+    public function exam_pilgan(){
+        return view('mahasiswa\exam_pilgan');
+    }
+
+    public function exam_essay(){
+        return view('mahasiswa\exam_essay');
+    }
+
+    public function exam_file(){
+        return view('mahasiswa\exam_file');
+    }
 }

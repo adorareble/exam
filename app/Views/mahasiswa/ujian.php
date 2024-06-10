@@ -84,7 +84,35 @@
                                         <td>15</td>
                                         <td>12-29-2024 - 12-30-2024</td>
                                         <td>45 Menit</td>
-                                        <td><button data-toggle="modal" data-target="#mulaiujian"
+                                        <td><button data-toggle="modal" data-target="#mulaiujianpilgan"
+                                                class="btn btn-xs bg-green" type="button"><i class="fa fa-edit"></i>
+                                                Mulai Ujian</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>UAS 12</td>
+                                        <td>Embeded System</td>
+                                        <td>Istriku Atiqah</td>
+                                        <td>Essay</td>
+                                        <td>15</td>
+                                        <td>12-29-2024 - 12-30-2024</td>
+                                        <td>45 Menit</td>
+                                        <td><button data-toggle="modal" data-target="#mulaiujianessay"
+                                                class="btn btn-xs bg-green" type="button"><i class="fa fa-edit"></i>
+                                                Mulai Ujian</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-center">1</td>
+                                        <td>UAS 12</td>
+                                        <td>Embeded System</td>
+                                        <td>Istriku Atiqah</td>
+                                        <td>File</td>
+                                        <td>15</td>
+                                        <td>12-29-2024 - 12-30-2024</td>
+                                        <td>45 Menit</td>
+                                        <td><button data-toggle="modal" data-target="#mulaiujianfile"
                                                 class="btn btn-xs bg-green" type="button"><i class="fa fa-edit"></i>
                                                 Mulai Ujian</button>
                                         </td>
@@ -98,8 +126,8 @@
                                         <td>15</td>
                                         <td>12-29-2024 - 12-30-2024</td>
                                         <td>45 Menit</td>
-                                        <td><button data-toggle="modal" data-target="#hasil"
-                                                class="btn btn-xs bg-blue" type="button"><i class="fa fa-edit"></i>
+                                        <td><button data-toggle="modal" data-target="#hasil" class="btn btn-xs bg-blue"
+                                                type="button"><i class="fa fa-edit"></i>
                                                 Hasil Ujian</button>
                                         </td>
                                     </tr>
@@ -119,7 +147,7 @@
 <!-- /.content-wrapper -->
 
 <!-- Modal Mulai Ujian -->
-<div class="modal fade" id="mulaiujian">
+<div class="modal fade" id="mulaiujianpilgan">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -160,7 +188,7 @@
                         </div>
                         <div class="col-sm-6">
                             <table class="table w-100">
-                            <tr>
+                                <tr>
                                     <th>Waktu Mulai</th>
                                     <td>10/01/2022</td>
                                 </tr>
@@ -172,23 +200,242 @@
                                     <th>Lama Pengerjaan</th>
                                     <td>40 Menit</td>
                                 </tr>
-                                
+
                                 <tr>
                                     <th>Total Soal</th>
                                     <td>10</td>
                                 </tr>
-                                
+
                             </table>
                         </div>
                         <div class="callout callout-info">
-                  <h5><b>Aturan Ujian:</b></h5>
+                            <h5><b>Aturan Ujian:</b></h5>
 
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero odio eum sapiente dolores numquam fugit exercitationem, ad reiciendis mollitia possimus ipsum vel corporis et eaque, consectetur laboriosam. Quos, a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa dignissimos, sed ea distinctio, at beatae quidem deserunt quae voluptate error in officiis modi vel dolor nemo fugiat similique veritatis vero? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum incidunt quibusdam voluptas voluptates aliquid deleniti, repudiandae pariatur eligendi asperiores, dolorum necessitatibus explicabo eveniet delectus architecto? Animi quisquam est in aliquam.</p>
-                </div>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero odio eum sapiente
+                                dolores numquam fugit exercitationem, ad reiciendis mollitia possimus ipsum vel corporis
+                                et eaque, consectetur laboriosam. Quos, a. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsa dignissimos, sed ea distinctio, at beatae quidem deserunt quae
+                                voluptate error in officiis modi vel dolor nemo fugiat similique veritatis vero? Lorem
+                                ipsum dolor sit amet consectetur, adipisicing elit. Cum incidunt quibusdam voluptas
+                                voluptates aliquid deleniti, repudiandae pariatur eligendi asperiores, dolorum
+                                necessitatibus explicabo eveniet delectus architecto? Animi quisquam est in aliquam.</p>
+                        </div>
                         <div class="col-12">
                             <table class="table w-100">
                                 <tr class="bg-green">
-                                    <form action="">
+                                    <form action="exam_pilgan" method="post">
+                                    <!-- sesuai jenis ujian actionnya -->
+                                    <!-- exam_pilgan = pilihan ganda -->
+                                    <!-- exam_essay = essay -->
+                                    <!-- exam_file = file -->
+                                        <th class="col-2 justify-content-center text-center"><label
+                                                class="col-form-label">INPUT TOKEN UJIAN</label>
+                                        </th>
+                                        <td class="col-6"><input type="text" class="form-control" name="token"
+                                                placeholder="Token"></td>
+                                        <td class="col-2"><button type="submit"
+                                                class="btn form-control bg-blue">MULAI</button></td>
+                                    </form>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal Mulai Ujian -->
+<div class="modal fade" id="mulaiujianessay">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">DETAIL UJIAN</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- form start -->
+
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <table class="table w-100">
+                                <tr>
+                                    <th>Nama Ujian</th>
+                                    <td>UAS 123</td>
+                                </tr>
+                                <tr>
+                                    <th>Jenis Soal</th>
+                                    <td>Pilihan Ganda</td>
+                                </tr>
+                                <tr>
+                                    <th>Jurusan</th>
+                                    <td>Teknik Informatika</td>
+                                </tr>
+                                <tr>
+                                    <th>Mata Kuliah</th>
+                                    <td>Embeded System</td>
+                                </tr>
+                                <tr>
+                                    <th>Dosen Pengajar</th>
+                                    <td>Sultan</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-sm-6">
+                            <table class="table w-100">
+                                <tr>
+                                    <th>Waktu Mulai</th>
+                                    <td>10/01/2022</td>
+                                </tr>
+                                <tr>
+                                    <th>Waktu Berakhir</th>
+                                    <td>10/01/2022</td>
+                                </tr>
+                                <tr>
+                                    <th>Lama Pengerjaan</th>
+                                    <td>40 Menit</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Total Soal</th>
+                                    <td>10</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="callout callout-info">
+                            <h5><b>Aturan Ujian:</b></h5>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero odio eum sapiente
+                                dolores numquam fugit exercitationem, ad reiciendis mollitia possimus ipsum vel corporis
+                                et eaque, consectetur laboriosam. Quos, a. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsa dignissimos, sed ea distinctio, at beatae quidem deserunt quae
+                                voluptate error in officiis modi vel dolor nemo fugiat similique veritatis vero? Lorem
+                                ipsum dolor sit amet consectetur, adipisicing elit. Cum incidunt quibusdam voluptas
+                                voluptates aliquid deleniti, repudiandae pariatur eligendi asperiores, dolorum
+                                necessitatibus explicabo eveniet delectus architecto? Animi quisquam est in aliquam.</p>
+                        </div>
+                        <div class="col-12">
+                            <table class="table w-100">
+                                <tr class="bg-green">
+                                    <form action="exam_essay" method="post">
+                                    <!-- sesuai jenis ujian actionnya -->
+                                    <!-- exam_pilgan = pilihan ganda -->
+                                    <!-- exam_essay = essay -->
+                                    <!-- exam_file = file -->
+                                        <th class="col-2 justify-content-center text-center"><label
+                                                class="col-form-label">INPUT TOKEN UJIAN</label>
+                                        </th>
+                                        <td class="col-6"><input type="text" class="form-control" name="token"
+                                                placeholder="Token"></td>
+                                        <td class="col-2"><button type="submit"
+                                                class="btn form-control bg-blue">MULAI</button></td>
+                                    </form>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.card-body -->
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- Modal Mulai Ujian -->
+<div class="modal fade" id="mulaiujianfile">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">DETAIL UJIAN</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- form start -->
+
+
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <table class="table w-100">
+                                <tr>
+                                    <th>Nama Ujian</th>
+                                    <td>UAS 123</td>
+                                </tr>
+                                <tr>
+                                    <th>Jenis Soal</th>
+                                    <td>Pilihan Ganda</td>
+                                </tr>
+                                <tr>
+                                    <th>Jurusan</th>
+                                    <td>Teknik Informatika</td>
+                                </tr>
+                                <tr>
+                                    <th>Mata Kuliah</th>
+                                    <td>Embeded System</td>
+                                </tr>
+                                <tr>
+                                    <th>Dosen Pengajar</th>
+                                    <td>Sultan</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-sm-6">
+                            <table class="table w-100">
+                                <tr>
+                                    <th>Waktu Mulai</th>
+                                    <td>10/01/2022</td>
+                                </tr>
+                                <tr>
+                                    <th>Waktu Berakhir</th>
+                                    <td>10/01/2022</td>
+                                </tr>
+                                <tr>
+                                    <th>Lama Pengerjaan</th>
+                                    <td>40 Menit</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Total Soal</th>
+                                    <td>10</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <div class="callout callout-info">
+                            <h5><b>Aturan Ujian:</b></h5>
+
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vero odio eum sapiente
+                                dolores numquam fugit exercitationem, ad reiciendis mollitia possimus ipsum vel corporis
+                                et eaque, consectetur laboriosam. Quos, a. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ipsa dignissimos, sed ea distinctio, at beatae quidem deserunt quae
+                                voluptate error in officiis modi vel dolor nemo fugiat similique veritatis vero? Lorem
+                                ipsum dolor sit amet consectetur, adipisicing elit. Cum incidunt quibusdam voluptas
+                                voluptates aliquid deleniti, repudiandae pariatur eligendi asperiores, dolorum
+                                necessitatibus explicabo eveniet delectus architecto? Animi quisquam est in aliquam.</p>
+                        </div>
+                        <div class="col-12">
+                            <table class="table w-100">
+                                <tr class="bg-green">
+                                    <form action="exam_file" method="post">
+                                    <!-- sesuai jenis ujian actionnya -->
+                                    <!-- exam_pilgan = pilihan ganda -->
+                                    <!-- exam_essay = essay -->
+                                    <!-- exam_file = file -->
                                         <th class="col-2 justify-content-center text-center"><label
                                                 class="col-form-label">INPUT TOKEN UJIAN</label>
                                         </th>
@@ -213,6 +460,7 @@
 
 <!-- Modal Cek Hasil -->
 <div class="modal fade" id="hasil">
+
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
@@ -223,13 +471,69 @@
             </div>
             <div class="modal-body">
                 <!-- form start -->
-                <div class="card-body">
-                    
+                <div class="card-body" id="hasilujianmahasiswa">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <table class="table w-100">
+                                <tr>
+                                    <th>Nama Ujian</th>
+                                    <td>UAS 123</td>
+                                </tr>
+                                <tr>
+                                    <th>Jenis Soal</th>
+                                    <td>Pilihan Ganda</td>
+                                </tr>
+                                <tr>
+                                    <th>Jurusan</th>
+                                    <td>Teknik Informatika</td>
+                                </tr>
+                                <tr>
+                                    <th>Mata Kuliah</th>
+                                    <td>Embeded System</td>
+                                </tr>
+                                <tr>
+                                    <th>Dosen Pengajar</th>
+                                    <td>Sultan</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-sm-6">
+                            <table class="table w-100">
+                                <tr>
+                                    <th>Waktu Mulai</th>
+                                    <td>10/01/2022</td>
+                                </tr>
+                                <tr>
+                                    <th>Waktu Berakhir</th>
+                                    <td>10/01/2022</td>
+                                </tr>
+                                <tr>
+                                    <th>Lama Pengerjaan</th>
+                                    <td>40 Menit</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Total Soal</th>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <th>Jawaban Benar</th>
+                                    <td>10</td>
+                                </tr>
+                                <tr class="bg-green">
+                                    <th>Nilai Akhir</th>
+                                    <td>92.0/100.0</td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- /.card-body -->
                 </div>
-                <!-- /.card-body -->
             </div>
+            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-content -->
+        <!-- /.modal-dialog -->
     </div>
-    <!-- /.modal-dialog -->
 </div>
